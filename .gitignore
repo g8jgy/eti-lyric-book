@@ -1,0 +1,5 @@
+# the speech model used to time the lyrics (461 MB, downloaded on demand)
+tools/.models/
+# the original recording; the published copy lives in docs/
+audio/
+tools/embedded-lyrics.txt

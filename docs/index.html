@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d060a">
+<meta name="description" content="A love song for Enterprise Technology &amp; Intelligence. Press play and the book follows along.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Lyric Book">
+<meta property="og:title" content="Another Great Day in E-T-I">
+<meta property="og:description" content="A love song for Enterprise Technology &amp; Intelligence. Press play and the book follows along.">
+<meta property="og:url" content="https://g8jgy.github.io/eti-lyric-book/">
+<meta property="og:image" content="https://g8jgy.github.io/eti-lyric-book/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%230b0608'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%232a1c20' stroke-width='1'/%3E%3Ccircle cx='32' cy='32' r='13' fill='%237c1535'/%3E%3Ccircle cx='32' cy='32' r='11.4' fill='none' stroke='%23e3ba6a' stroke-width='1'/%3E%3Ccircle cx='32' cy='32' r='2.2' fill='%230b0608'/%3E%3C/svg%3E">
+<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Another Great Day Lyric Book</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Pinyon+Script&family=Tenor+Sans&display=swap">
+<style>
+:root{
+  /* Layout: one lyric booklet lying on a candlelit table. Wide screens show two-page
+     spreads that turn in 3D; phones show one page at a time. Every measure inside the
+     booklet is a multiple of --u (1% of a page's width), so it scales like print. */
+  color-scheme:dark;
+  --room:#0d060a;
+  --wine:#4a0e27;
+  --oxblood:#7c1535;
+  --ruby:#a81f3f;
+  --blush:#f4d9d0;
+  --paper:#f6e8e1;
+  --paper-rose:#f1d5cf;
+  --ink:#34101d;
+  --ink-soft:#7d3a4c;
+  --gold:#e3ba6a;
+  --gold-hi:#fff3cf;
+  --gold-lo:#a97a2c;
+  --go:#62d6a0;
+  --hold:#f3c855;
+  --stop:#f25468;
+  --font-script:"Pinyon Script","Snell Roundhand","Apple Chancery","URW Chancery L",cursive;
+  --font-serif:"Bodoni Moda",Didot,"Bodoni 72","Bodoni MT","Playfair Display",Georgia,serif;
+  --font-label:"Tenor Sans","Gill Sans","Gill Sans MT",Optima,"Segoe UI",sans-serif;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35  0 0 0 0 .1  0 0 0 0 .15  0 0 0 .5 -.19'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  --grain-dk:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 .78  0 0 0 0 .74  0 0 0 .3 -.12'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  --u:4px;
+  --dur:880ms;
+  --ease:cubic-bezier(.45,.05,.55,.95);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%}
+body{
+  height:100%;margin:0;overflow:hidden;overscroll-behavior:none;
+  color:var(--blush);font-family:var(--font-serif);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  background:
+    radial-gradient(72vmax 50vmax at 50% 36%,rgba(124,21,53,.52),transparent 70%),
+    radial-gradient(40vmax 40vmax at 90% 94%,rgba(227,186,106,.10),transparent 70%),
+    radial-gradient(36vmax 36vmax at 6% 88%,rgba(168,31,63,.17),transparent 70%),
+    var(--room);
+}
+h1,h2,p,blockquote{margin:0;font-weight:inherit}
+.app{
+  height:100%;display:flex;flex-direction:column;gap:12px;padding-block:18px 12px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+.stage{position:relative;flex:1 1 0;min-height:0;display:grid;place-items:center;touch-action:pan-y}
+.wrap{position:relative;width:280px;height:392px}
+
+/* ---------- the booklet: mechanics ---------- */
+.book{position:absolute;inset:0;--n:12;perspective:calc(var(--u)*700);transition:transform var(--dur) var(--ease)}
+.book[data-mode="spread"][data-at="cover"]{transform:translateX(-40.5%)}
+.book[data-mode="spread"][data-at="back"]{transform:translateX(25%)}
+.leaf{--i:0}
+.page{position:absolute;inset:0;overflow:hidden;font-size:calc(var(--u)*4.05);line-height:1.5;font-weight:460;border-radius:calc(var(--u)*.6)}
+
+.shadow{
+  position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:calc(var(--u)*.6);
+  box-shadow:0 calc(var(--u)*3) calc(var(--u)*7) rgba(0,0,0,.6),0 calc(var(--u)*.8) calc(var(--u)*2) rgba(0,0,0,.45);
+  transition:left var(--dur) var(--ease),right var(--dur) var(--ease);
+}
+.book[data-mode="spread"][data-at="cover"] .shadow{left:50%}
+.book[data-mode="spread"][data-at="back"] .shadow{right:50%}
+
+/* one page at a time */
+.book[data-mode="single"] .leaf{position:absolute;inset:0;z-index:calc(var(--n) - var(--i));perspective:calc(var(--u)*800);pointer-events:none}
+.book[data-mode="single"] .page{
+  transform-origin:0 50%;pointer-events:auto;
+  transition:transform .62s cubic-bezier(.2,.75,.25,1) var(--delay,0ms),opacity .16s linear var(--delay,0ms),visibility 0s linear var(--delay,0ms);
+}
+.book[data-mode="single"] .front{z-index:2}
+.book[data-mode="single"] .back{z-index:1}
+.book[data-mode="single"] .page.turned{
+  transform:rotateY(-90deg);opacity:0;visibility:hidden;pointer-events:none;
+  transition:transform .6s cubic-bezier(.55,.05,.8,.45) var(--delay,0ms),opacity .22s linear calc(.38s + var(--delay,0ms)),visibility 0s linear calc(.6s + var(--delay,0ms));
+}
+
+/* two-page spreads */
+.book[data-mode="spread"] .leaf{
+  position:absolute;top:0;left:50%;width:50%;height:100%;
+  transform-origin:0 50%;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;
+  z-index:calc(var(--n) - var(--i));
+  transition:transform var(--dur) var(--ease) var(--delay,0ms),z-index 0s linear calc(var(--dur) / 2 + var(--delay,0ms));
+}
+.book[data-mode="spread"] .leaf.flipped{transform:rotateY(-180deg);z-index:calc(var(--i) + 1)}
+.book[data-mode="spread"] .page{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.book[data-mode="spread"] .back{transform:rotateY(180deg)}
+.book[data-mode="spread"] .leaf:not(.rest) > .page{box-shadow:0 0 calc(var(--u)*6) rgba(0,0,0,.5)}
+/* a settled leaf lies flat, so its text stays crisp */
+.book[data-mode="spread"] .leaf.rest{transform:none;transition:none}
+.book[data-mode="spread"] .leaf.rest.flipped{left:0}
+.book[data-mode="spread"] .leaf.rest > .back{transform:none}
+.book[data-mode="spread"] .leaf.rest:not(.flipped) > .back,
+.book[data-mode="spread"] .leaf.rest.flipped > .front{visibility:hidden}
+.leaf.prep{transition:none !important}
+.book.no-anim,.book.no-anim *,.book.no-anim *::before,.book.no-anim *::after{transition:none !important}
+
+/* page turn shading and the gutter */
+.page::before{
+  content:"";position:absolute;inset:0;z-index:5;pointer-events:none;opacity:0;
+  background:linear-gradient(90deg,rgba(10,2,6,.6),rgba(10,2,6,.14) 60%,rgba(10,2,6,0));
+}
+.book[data-mode="spread"] .back::before{background:linear-gradient(270deg,rgba(10,2,6,.6),rgba(10,2,6,.14) 60%,rgba(10,2,6,0))}
+.book[data-mode="spread"] .leaf:not(.rest) > .page::before{animation:shade var(--dur) var(--ease) var(--delay,0ms) both}
+.book[data-mode="single"] .page::before{transition:opacity .5s linear}
+.book[data-mode="single"] .page.turned::before{opacity:.85}
+.page::after{
+  content:"";position:absolute;inset:0;z-index:4;pointer-events:none;
+  background:linear-gradient(90deg,rgba(30,5,14,.3) 0,rgba(30,5,14,.1) 3.5%,rgba(30,5,14,0) 11%);
+}
+.book[data-mode="spread"] .back::after{background:linear-gradient(270deg,rgba(30,5,14,.3) 0,rgba(30,5,14,.1) 3.5%,rgba(30,5,14,0) 11%)}
+
+/* margins you can click to turn the page */
+.zone{position:absolute;top:0;bottom:0;z-index:40;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.zp{left:0;width:calc(var(--u)*10)}
+.zn{right:0;width:calc(var(--u)*10)}
+.book[data-at="cover"] .zp,.book[data-at="back"] .zn{display:none}
+.book[data-mode="spread"][data-at="cover"] .zn{left:50%;right:0;width:auto}
+.book[data-mode="spread"][data-at="back"] .zp{left:0;right:50%;width:auto}
+.book[data-mode="single"][data-at="cover"] .zn,.book[data-mode="single"][data-at="back"] .zp{left:0;right:0;width:auto}
+.zone::after{
+  content:"";position:absolute;top:50%;width:calc(var(--u)*7);height:calc(var(--u)*7);margin-top:calc(var(--u)*-3.5);
+  border-radius:50%;opacity:0;transition:opacity .2s linear;
+  box-shadow:0 0 0 1px rgba(227,186,106,.45);
+  background:rgba(24,5,12,.76) center/46% no-repeat;
+}
+.zn::after{right:calc(var(--u)*1.5);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e3ba6a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 5l7 7-7 7'/%3E%3C/svg%3E")}
+.zp::after{left:calc(var(--u)*1.5);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e3ba6a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 5l-7 7 7 7'/%3E%3C/svg%3E")}
+@media (hover:hover){.zone:hover::after{opacity:1}}
+
+/* the record behind the cover */
+.disc{
+  position:absolute;z-index:0;top:calc(var(--u)*8);left:calc(var(--u)*138);
+  width:calc(var(--u)*124);height:calc(var(--u)*124);border-radius:50%;
+  background:
+    radial-gradient(circle closest-side,transparent 0 60%,rgba(255,255,255,.04) 60.4% 61%,transparent 61.4% 80%,rgba(255,255,255,.035) 80.4% 81%,transparent 81.4%),
+    repeating-radial-gradient(circle closest-side,#0c0709 0,#0c0709 .9px,#1b1215 1.5px,#0c0709 2.3px),
+    #0b0608;
+  box-shadow:0 0 0 1px rgba(255,255,255,.07),0 calc(var(--u)*3) calc(var(--u)*8) rgba(0,0,0,.6);
+  transition:transform 1s var(--ease),opacity .45s linear;
+}
+.disc::before{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  background:conic-gradient(from 28deg,transparent 0 6%,rgba(255,228,214,.2) 11%,transparent 17% 50%,rgba(255,228,214,.14) 58%,transparent 66% 100%);
+}
+.disc-label{position:absolute;inset:31%;border-radius:50%;overflow:hidden;box-shadow:0 0 0 calc(var(--u)*.3) rgba(0,0,0,.55)}
+.disc-label svg{display:block;width:100%;height:100%;animation:spin 1.8s linear infinite;animation-play-state:paused}
+.book[data-playing="1"] .disc-label svg{animation-play-state:running}
+.book[data-song="on"] .disc{cursor:pointer}
+.disc-play{
+  all:unset;box-sizing:border-box;position:absolute;z-index:1;left:84.5%;top:50%;transform:translate(-50%,-50%);
+  display:none;align-items:center;gap:calc(var(--u)*1.2);
+  padding:calc(var(--u)*1.25) calc(var(--u)*2.6) calc(var(--u)*1.25) calc(var(--u)*2);
+  border-radius:999px;border:1px solid rgba(227,186,106,.7);background:rgba(20,5,10,.82);color:var(--gold);
+  font-family:var(--font-label);font-size:calc(var(--u)*2.9);line-height:1;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
+}
+.book[data-song="on"] .disc-play{display:flex}
+.disc-play svg{flex:none;width:calc(var(--u)*3);height:calc(var(--u)*3);fill:none;stroke:currentColor;stroke-width:2.8;stroke-linecap:round}
+.disc-play:hover{background:rgba(227,186,106,.2);border-color:var(--gold)}
+.disc-play:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.disc-label text{font-family:var(--font-label);font-size:6.2px;fill:var(--gold)}
+.book:not([data-at="cover"]) .disc{transform:translateX(calc(var(--u)*-64));opacity:0}
+.book[data-mode="spread"][data-at="cover"] .disc{animation:discIn 1.5s cubic-bezier(.2,.7,.2,1) .35s backwards}
+.book[data-mode="single"] .disc{display:none}
+
+/* ---------- the booklet: paper and type ---------- */
+.paper{color:var(--ink);background:var(--grain),radial-gradient(120% 90% at 50% 0%,#fcf3ee,var(--paper) 60%,#eedcd4)}
+.rose{color:var(--ink);background:var(--grain),radial-gradient(120% 90% at 50% 8%,#f9e4de,var(--paper-rose) 55%,#e7c2bc)}
+.dark{color:var(--blush);font-weight:480;background:var(--grain-dk),radial-gradient(110% 75% at 50% 6%,#7a1a3c 0%,var(--wine) 38%,#230711 78%,#19050c 100%)}
+.dark.spot{background:var(--grain-dk),radial-gradient(58% 40% at 50% 50%,rgba(255,205,185,.15),transparent 72%),radial-gradient(110% 75% at 50% 6%,#6d1736 0%,#3f0c21 40%,#1f0610 80%,#16040a 100%)}
+.dark.hush{background:var(--grain-dk),radial-gradient(72% 44% at 50% 52%,#4d0f29 0%,#27081a 55%,#12040a 100%)}
+.cover,.dark.gala{
+  color:var(--blush);
+  background:
+    var(--grain-dk),
+    linear-gradient(118deg,transparent 28%,rgba(255,190,180,.08) 43%,rgba(255,190,180,.02) 52%,transparent 66%),
+    radial-gradient(95% 60% at 50% 40%,#8a1d42 0%,#5a1230 40%,#2c0915 80%,#1d060e 100%);
+}
+.cover{user-select:none;-webkit-user-select:none}
+
+.in{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;padding:calc(var(--u)*12) calc(var(--u)*10) calc(var(--u)*13)}
+.fo{position:absolute;z-index:2;bottom:calc(var(--u)*5.4);font-style:italic;font-size:calc(var(--u)*3.1);line-height:1;color:var(--ink-soft);opacity:.85}
+.front .fo{right:calc(var(--u)*10)}
+.back .fo{left:calc(var(--u)*10)}
+.dark .fo{color:rgba(244,217,208,.55)}
+
+.hd{display:flex;flex-direction:column;align-items:flex-start;gap:calc(var(--u)*1.1);margin-bottom:calc(var(--u)*5.2)}
+.hd .t{font-family:var(--font-script);font-weight:400;font-size:calc(var(--u)*10.5);line-height:.95;color:var(--oxblood)}
+.hd .d{font-family:var(--font-label);font-size:calc(var(--u)*2.7);line-height:1.35;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);text-wrap:balance}
+.hd::after{content:"";display:block;width:calc(var(--u)*13);height:max(1px,calc(var(--u)*.22));margin-top:calc(var(--u)*2.2);background:linear-gradient(90deg,var(--gold-lo),var(--gold) 55%,transparent)}
+.hd.c{align-items:center;text-align:center}
+.hd.c .d{padding-left:.2em}
+.hd.c::after{width:calc(var(--u)*18);background:linear-gradient(90deg,transparent,var(--gold-lo),transparent)}
+.dark .hd .t{color:var(--gold)}
+.dark .hd .d{color:rgba(244,217,208,.74)}
+.dark .hd.c::after{background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hd.sub{margin-bottom:calc(var(--u)*3)}
+.hd.sub .t{font-size:calc(var(--u)*8)}
+
+.ly{display:flex;flex-direction:column;gap:calc(var(--u)*3.3);font-size:calc(var(--u)*4.25*var(--ts,1))}
+.ly .l{display:block;padding-left:1.5em;text-indent:-1.5em;text-wrap:balance}
+/* the line being sung gets a gold underline that sweeps in from the left */
+.lt{
+  --hl:rgba(227,186,106,.6);
+  background:linear-gradient(to top,var(--hl) 0,var(--hl) 40%,transparent 40%) no-repeat 0 0/0% 100%;
+  transition:background-size .45s ease-out;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .16em;margin:0 -.16em;
+}
+.dark .lt{--hl:rgba(227,186,106,.32)}
+.now .lt{background-size:100% 100%}
+.hook .b{transition:filter .4s ease-out}
+.hook.now .b{filter:drop-shadow(0 0 calc(var(--u)*1.6) rgba(168,31,63,.55))}
+.gala .hook.now .b{filter:drop-shadow(0 0 calc(var(--u)*1.8) rgba(227,186,106,.8))}
+.nw{white-space:nowrap}
+.hy{-webkit-text-stroke:.04em currentColor}
+.nm{font-weight:680;color:var(--ruby)}
+.dark .nm{font-weight:620;color:var(--gold)}
+.ly.c{align-items:center;text-align:center;font-style:italic;font-size:calc(var(--u)*4.1*var(--ts,1));font-weight:520}
+.ly.c .l{padding-left:0;text-indent:0}
+.hook{display:flex;flex-direction:column;align-items:center;line-height:1}
+.hook .a,.hook .c{font-size:calc(var(--u)*5.4*var(--ts,1));line-height:1.15}
+.hook .b{position:relative;display:inline-block;font-style:normal;font-weight:520;font-size:calc(var(--u)*11.4);line-height:1.04;letter-spacing:.055em;padding-left:.055em;text-transform:uppercase;margin:calc(var(--u)*.6) 0 calc(var(--u)*.2)}
+.hook .b.e2x{margin-top:calc(var(--u)*3.4)}
+.hook .b.e3x{margin-top:calc(var(--u)*4.8)}
+.hook .e{position:absolute;left:0;top:0;width:100%;padding-left:.055em;color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:max(.7px,calc(var(--u)*.14)) rgba(168,31,63,.5);pointer-events:none;user-select:none;-webkit-user-select:none}
+.hook .e1{transform:translateY(calc(var(--u)*-1.3));opacity:.6}
+.hook .e2{transform:translateY(calc(var(--u)*-2.6));opacity:.36}
+.hook .e3{transform:translateY(calc(var(--u)*-3.9));opacity:.2}
+.gala .hook .e{-webkit-text-stroke-color:rgba(227,186,106,.7)}
+.gd{font-style:normal;font-weight:620;font-size:.86em;letter-spacing:.09em;text-transform:uppercase}
+.grn{color:var(--go);text-shadow:0 0 calc(var(--u)*1.6) rgba(98,214,160,.75),0 0 calc(var(--u)*4) rgba(98,214,160,.4)}
+
+.foil,.ruby{
+  display:inline-block;padding:.2em .32em;margin:-.2em -.32em;
+  background-size:240% 100%;background-position:calc(var(--foil,50)*1%) 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+}
+.foil{background-image:linear-gradient(100deg,#a97a2c 0%,#e9c57a 14%,#fff3cf 27%,#dcae5a 40%,#a97a2c 54%,#f1d48f 68%,#fff3cf 80%,#c79a45 92%,#a97a2c 100%)}
+.ruby{background-image:linear-gradient(100deg,#5d0d27 0%,#a81f3f 22%,#de5870 38%,#a81f3f 52%,#5d0d27 70%,#b3243f 86%,#5d0d27 100%)}
+.cover .foil{animation:sheen 2.6s ease-out .25s backwards}
+
+.strings{
+  --sc:rgba(169,122,44,.6);
+  position:absolute;left:0;right:0;bottom:0;height:50%;z-index:0;opacity:.55;
+  background:repeating-linear-gradient(90deg,var(--sc) 0 max(1px,calc(var(--u)*.16)),transparent max(1px,calc(var(--u)*.16)) calc(var(--u)*2.9));
+  -webkit-mask-image:linear-gradient(0deg,#000 0%,rgba(0,0,0,.45) 50%,transparent 100%);
+  mask-image:linear-gradient(0deg,#000 0%,rgba(0,0,0,.45) 50%,transparent 100%);
+}
+.gala .strings{--sc:rgba(227,186,106,.5);height:100%;opacity:.3}
+.live .strings{animation:rise 2.2s ease-out both}
+
+/* spoken, whispered, instrumental */
+.say{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:calc(var(--u)*3.4);text-align:center;font-style:italic;font-size:calc(var(--u)*5.3*var(--ts,1));line-height:1.34;padding-bottom:calc(var(--u)*6)}
+.say p{max-width:100%;text-wrap:balance}
+.say.s{font-size:calc(var(--u)*4.6*var(--ts,1))}
+
+.apiw{flex:1 1 auto;display:flex;align-items:center;justify-content:center;padding-bottom:calc(var(--u)*12)}
+.apiw.fix{flex:none;padding:calc(var(--u)*1) 0 calc(var(--u)*8)}
+.api{display:flex;justify-content:center;align-items:baseline;font-size:calc(var(--u)*20);line-height:1;color:var(--blush)}
+.api.sm{font-size:calc(var(--u)*14)}
+.syl{position:relative;display:block}
+.syl b{display:block;font-weight:400;opacity:.94;text-shadow:0 0 calc(var(--u)*3) rgba(243,170,160,.55)}
+.syl em{position:absolute;top:104%;left:50%;transform:translateX(-50%);font-size:calc(var(--u)*3.4);line-height:1.2;letter-spacing:.08em;color:rgba(244,217,208,.86)}
+.dots{display:flex;gap:calc(var(--u)*1.7);margin:0 calc(var(--u)*3) 0 calc(var(--u)*2.4);opacity:.8}
+.dots i{display:block;width:calc(var(--u)*.9);height:calc(var(--u)*.9);border-radius:50%;background:currentColor}
+.live .syl b,.live .dots{animation:beat 6s ease-in-out calc(var(--k)*1.5s) infinite both}
+
+.art{flex:1 1 0;min-height:calc(var(--u)*20);display:flex;margin:0 calc(var(--u)*-10) calc(var(--u)*4)}
+.rib{display:block;width:100%;height:100%}
+.rib path{fill:none;stroke:var(--gold);stroke-width:.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.rib path:nth-child(even){opacity:.6}
+.rib.fade{-webkit-mask-image:linear-gradient(90deg,#000 0%,#000 40%,transparent 97%);mask-image:linear-gradient(90deg,#000 0%,#000 40%,transparent 97%)}
+.live .rib path{animation:draw 2.6s cubic-bezier(.3,.6,.2,1) calc(var(--k)*90ms) both}
+
+/* outro */
+.rag{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;gap:calc(var(--u)*7);padding-bottom:calc(var(--u)*5)}
+.rag p{display:flex;flex-direction:column;align-items:center;gap:calc(var(--u)*2.8);text-align:center;font-style:italic;font-size:calc(var(--u)*5*var(--ts,1));line-height:1.3;text-wrap:balance}
+.lamp{display:block;flex:none;width:calc(var(--u)*3.6);height:calc(var(--u)*3.6);border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.75),transparent 42%),var(--c);box-shadow:0 0 calc(var(--u)*2.4) var(--c),0 0 calc(var(--u)*7) var(--cg)}
+.lamp.go{--c:var(--go);--cg:rgba(98,214,160,.45)}
+.lamp.hold{--c:var(--hold);--cg:rgba(243,200,85,.45)}
+.lamp.stop{--c:var(--stop);--cg:rgba(242,84,104,.5)}
+.live .rag p{animation:lineIn .7s ease-out calc(.25s + var(--k)*.95s) both}
+.live .lamp{animation:lampOn .7s ease-out calc(.25s + var(--k)*.95s) both}
+.live .lamp.stop{animation:lampOn .7s ease-out 2.15s both,pulse 1.8s ease-in-out 2.9s infinite}
+/* while the song plays, each lamp waits for its own line */
+.book[data-playing="1"] .live .rag p,.book[data-playing="1"] .live .lamp,.book[data-playing="1"] .live .lamp.stop{animation:none}
+.book[data-playing="1"] .rag p{transition:opacity .5s ease-out}
+.book[data-playing="1"] .lamp{transition:opacity .5s ease-out,box-shadow .5s ease-out}
+.book[data-playing="1"] .rag p:not(.now):not(.past){opacity:.45}
+.book[data-playing="1"] .rag p:not(.now):not(.past) .lamp{opacity:.16;box-shadow:none}
+
+.fin{align-items:center;justify-content:center;text-align:center;gap:calc(var(--u)*8)}
+.cue{display:flex;align-items:center;gap:calc(var(--u)*2.4);font-family:var(--font-label);font-size:calc(var(--u)*2.7);line-height:1.3;letter-spacing:.3em;text-transform:uppercase;color:rgba(244,217,208,.66)}
+.cue::before,.cue::after{content:"";width:calc(var(--u)*6);height:1px;background:currentColor;opacity:.6}
+.punch{font-style:italic;font-size:calc(var(--u)*7.6);line-height:1.22;text-wrap:balance}
+.last{display:flex;flex-direction:column;align-items:center;gap:calc(var(--u)*2.6)}
+.note{display:block;width:calc(var(--u)*34);height:auto}
+
+/* verse one: a hundred shades of red */
+.reds{position:absolute;top:calc(var(--u)*12.5);right:calc(var(--u)*10);width:calc(var(--u)*17);height:calc(var(--u)*17);display:grid;grid-template-columns:repeat(10,1fr);gap:calc(var(--u)*.22)}
+.reds i{display:block;border-radius:calc(var(--u)*.12)}
+.reds i.sel{outline:max(1px,calc(var(--u)*.22)) solid var(--ink);outline-offset:calc(var(--u)*.08)}
+
+/* personnel */
+.hd.tight{margin-bottom:calc(var(--u)*3.2)}
+.creds{display:flex;flex-direction:column;gap:calc(var(--u)*.7)}
+.cred{
+  all:unset;box-sizing:border-box;display:block;cursor:pointer;
+  width:calc(100% + var(--u)*3.2);margin:0 calc(var(--u)*-1.6);padding:calc(var(--u)*.6) calc(var(--u)*1.6);
+  border-radius:calc(var(--u)*1);font-size:calc(var(--u)*2.9*(1 + (var(--ts,1) - 1)*.6));line-height:1.46;color:var(--ink);transition:background-color .2s linear;
+}
+.cred .cb{font-variation-settings:"opsz" 7}
+.cred .pr{white-space:nowrap}
+.cred:hover{background-color:rgba(124,21,53,.08)}
+.cred:focus-visible{outline:2px solid var(--oxblood);outline-offset:1px}
+.cred .ch{display:flex;align-items:baseline;gap:calc(var(--u)*1.6);margin-bottom:calc(var(--u)*.4);font-family:var(--font-label);font-size:calc(var(--u)*2.45);letter-spacing:.2em;text-transform:uppercase;color:var(--oxblood)}
+.cred .ld{flex:1 1 auto;border-bottom:max(1px,calc(var(--u)*.18)) dotted rgba(124,21,53,.5);transform:translateY(calc(var(--u)*-.5))}
+.cred .cb{display:block}
+.cred b{font-weight:680;color:var(--ruby)}
+.cred i{font-style:italic}
+.cred .sp{margin:0 .15em 0 .4em;opacity:.45}
+
+/* covers */
+.framed .in::before,.framed .in::after{content:"";position:absolute;pointer-events:none;border-radius:calc(var(--u)*.9)}
+.framed .in::before{inset:calc(var(--u)*4.4);border:max(1px,calc(var(--u)*.24)) solid rgba(227,186,106,.8)}
+.framed .in::after{inset:calc(var(--u)*5.9);border:max(1px,calc(var(--u)*.1)) solid rgba(227,186,106,.42)}
+.framed .fo{bottom:calc(var(--u)*8.6)}
+.framed.back .fo{left:calc(var(--u)*10.5)}
+.cv{align-items:center;text-align:center;justify-content:space-between;padding:calc(var(--u)*15) calc(var(--u)*9.5) calc(var(--u)*14)}
+.cv-top{font-family:var(--font-label);font-size:calc(var(--u)*2.9);line-height:1.5;letter-spacing:.46em;padding-left:.46em;text-transform:uppercase;white-space:nowrap;color:var(--gold)}
+.cv-top.long{letter-spacing:.26em;padding-left:.26em}
+.dm{display:inline-block;position:relative;width:.15em;height:.15em;margin:0 .2em .32em .06em;background:var(--gold);transform:rotate(45deg)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.cv-title{display:flex;flex-direction:column;align-items:center;font-weight:400;line-height:1}
+.cv-title .s1{font-family:var(--font-script);font-size:calc(var(--u)*20);line-height:.9;margin-bottom:calc(var(--u)*-.6)}
+.cv-title .s2{font-size:calc(var(--u)*11.4);font-weight:520;line-height:1.05;letter-spacing:.06em;padding-left:.06em;text-transform:uppercase}
+.cv-title .s3{display:flex;align-items:baseline;gap:calc(var(--u)*3.6);margin-top:calc(var(--u)*1.6)}
+.cv-title .sc{font-family:var(--font-script);font-size:calc(var(--u)*13)}
+.cv-title .eti{font-size:calc(var(--u)*9.6);font-weight:480;letter-spacing:.14em}
+.cv-foot{display:flex;flex-direction:column;align-items:center;gap:calc(var(--u)*2.6)}
+.orn{display:block;position:relative;width:calc(var(--u)*26);height:calc(var(--u)*2);background:linear-gradient(90deg,transparent,var(--gold) 28%,var(--gold) 43%,transparent 43%,transparent 57%,var(--gold) 57%,var(--gold) 72%,transparent) center/100% max(1px,calc(var(--u)*.16)) no-repeat}
+.orn::after{content:"";position:absolute;left:50%;top:50%;width:calc(var(--u)*1.4);height:calc(var(--u)*1.4);background:var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
+.cv-sub{font-style:italic;font-size:calc(var(--u)*4.3);line-height:1.2}
+.cv-org{font-family:var(--font-label);font-size:calc(var(--u)*2.4);line-height:1.8;letter-spacing:.22em;padding-left:.22em;text-transform:uppercase;color:var(--gold);text-wrap:balance}
+.bk-q{display:block;font-family:var(--font-script);font-size:calc(var(--u)*12.5);line-height:1.1;text-wrap:balance;padding:.25em .3em;margin:-.25em -.3em}
+.bk-with{font-style:italic;font-size:calc(var(--u)*3.5);line-height:1.45;text-wrap:balance;color:rgba(244,217,208,.84)}
+
+/* ---------- the page bar ---------- */
+.bar{position:relative;z-index:60;flex:none;width:100%;max-width:780px;margin:0 auto;display:flex;align-items:center;gap:22px}
+.bar[data-song="on"]{max-width:1040px}
+.song{flex:0 1 340px;min-width:0;display:flex;align-items:center;gap:12px}
+.pager{flex:1 1 0;min-width:0;display:flex;align-items:center;gap:12px}
+.bar[data-song="on"] .pager{padding-left:22px;border-left:1px solid rgba(227,186,106,.22)}
+.nb{
+  flex:none;width:40px;height:40px;display:grid;place-items:center;padding:0;border-radius:50%;
+  border:1px solid rgba(227,186,106,.45);background:rgba(30,6,16,.84);color:var(--gold);cursor:pointer;
+  transition:background-color .2s linear,border-color .2s linear,opacity .2s linear;-webkit-tap-highlight-color:transparent;
+}
+.nb:hover:not(:disabled){background:rgba(227,186,106,.14);border-color:var(--gold)}
+.nb:focus-visible,.scrub:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.nb:disabled{opacity:.28;cursor:default}
+.nb svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.bar[data-at="cover"] #next{animation:invite 2.4s ease-out infinite}
+.nb.play{background:var(--gold);border-color:var(--gold);color:#2b0915}
+.nb.play:hover:not(:disabled){background:var(--gold-hi);border-color:var(--gold-hi)}
+.nb.play svg{width:17px;height:17px}
+.nb .i-play,.disc-play .i-play{fill:currentColor;stroke:none}
+.nb .i-pause{stroke-width:2.8}
+[aria-pressed="true"] > .i-play,[aria-pressed="false"] > .i-pause{display:none}
+.pill{
+  all:unset;box-sizing:border-box;flex:none;height:30px;padding:0 13px;display:inline-flex;align-items:center;
+  border-radius:999px;border:1px solid rgba(227,186,106,.6);background:rgba(30,6,16,.84);color:var(--gold);
+  font-family:var(--font-label);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
+}
+.pill:hover{background:rgba(227,186,106,.14);border-color:var(--gold)}
+.pill:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+@media (max-width:700px){
+  .bar{flex-direction:column;align-items:stretch;gap:8px}
+  .song{flex:none}
+  .bar[data-song="on"] .pager{padding-left:0;border-left:0}
+}
+.mid{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+.lab{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-family:var(--font-label);font-size:11px;line-height:1.5;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 0 6px rgba(13,6,10,.9)}
+#lab{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--blush)}
+#cnt{flex:none;color:rgba(244,217,208,.62);font-variant-numeric:tabular-nums}
+@media (max-width:520px){#fs{display:none}}
+.scrub{-webkit-appearance:none;appearance:none;display:block;width:100%;height:22px;margin:0;background:transparent;cursor:pointer;border-radius:11px}
+.scrub::-webkit-slider-runnable-track{height:1px;background:linear-gradient(90deg,var(--gold) var(--fill,0%),rgba(244,217,208,.28) var(--fill,0%))}
+.scrub::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;margin-top:-6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(227,186,106,.18)}
+.scrub::-moz-range-track{height:1px;background:rgba(244,217,208,.28)}
+.scrub::-moz-range-progress{height:1px;background:var(--gold)}
+.scrub::-moz-range-thumb{width:13px;height:13px;border:0;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(227,186,106,.18)}
+
+@keyframes shade{0%,100%{opacity:0}50%{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes discIn{from{transform:translateX(calc(var(--u)*-64));opacity:0}}
+@keyframes sheen{from{background-position:130% 0}}
+@keyframes beat{0%{opacity:.3}7%{opacity:1}26%{opacity:.66}46%,100%{opacity:.3}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes lampOn{from{opacity:.16;box-shadow:none}}
+@keyframes lineIn{from{opacity:.3}}
+@keyframes pulse{50%{transform:scale(1.14)}}
+@keyframes rise{from{transform:translateY(38%);opacity:0}}
+@keyframes invite{0%{box-shadow:0 0 0 0 rgba(227,186,106,.5)}70%,100%{box-shadow:0 0 0 10px rgba(227,186,106,0)}}
+
+@media (prefers-reduced-motion:reduce){
+  .book,.shadow,.disc,.book[data-mode="single"] .page,.book[data-mode="single"] .page.turned,.page::before,.lt,.hook .b,.lamp,.rag p{transition:none !important}
+  .disc,.disc-label svg,.cover .foil,.live .strings,.live .syl b,.live .dots,.live .rib path,.live .rag p,.live .lamp,.live .lamp.stop,.bar[data-at="cover"] #next{animation:none !important}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <audio id="au" preload="metadata" src="another-great-day-love-song.mp3"></audio>
+  <main class="stage" id="stage">
+    <div class="wrap" id="wrap">
+      <div class="book" id="book" data-mode="single" data-at="cover">
+        <div class="shadow"></div>
+        <div class="disc" id="disc">
+          <button class="disc-play" type="button" id="discPlay" aria-label="Play the song" aria-pressed="false"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5v13M15.5 5.5v13"/></svg><span id="discText">Play</span></button>
+          <div class="disc-label" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <defs>
+                <radialGradient id="lg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#b0264f"/><stop offset=".62" stop-color="#7c1535"/><stop offset="1" stop-color="#4a0e27"/></radialGradient>
+                <path id="lp" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0"/>
+              </defs>
+              <circle cx="50" cy="50" r="50" fill="url(#lg)"/>
+              <circle cx="50" cy="50" r="46.5" fill="none" stroke="#e3ba6a" stroke-width=".5" opacity=".85"/>
+              <circle cx="50" cy="50" r="24" fill="none" stroke="#e3ba6a" stroke-width=".35" opacity=".6"/>
+              <text><textPath href="#lp" textLength="222" lengthAdjust="spacing">ANOTHER GREAT DAY IN E-T-I &#8226; THE LYRIC BOOK &#8226;</textPath></text>
+              <circle cx="50" cy="50" r="4" fill="#0b0608"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- leaf 1: cover / intro -->
+        <div class="leaf rest" style="--i:0">
+          <section class="page front cover framed" data-title="Cover" aria-label="Cover">
+            <div class="in cv">
+              <p class="cv-top">The Lyric Book</p>
+              <h1 class="cv-title">
+                <span class="s1"><span class="foil">Another</span></span>
+                <span class="s2"><span class="foil">Great Day</span></span>
+                <span class="s3"><span class="sc"><span class="foil">in</span></span><span class="eti"><span class="foil">E<i class="dm"><span class="vh">-</span></i>T<i class="dm"><span class="vh">-</span></i>I</span></span></span>
+              </h1>
+              <div class="cv-foot">
+                <span class="orn" aria-hidden="true"></span>
+                <p class="cv-sub">A love song for</p>
+                <p class="cv-org">Enterprise Technology &amp; Intelligence</p>
+              </div>
+            </div>
+          </section>
+          <section class="page back dark" data-title="Intro" aria-label="Page 2, Intro">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Intro</h2><p class="d">Tenor sax and soft electric piano</p></header>
+              <div class="art"><svg class="rib" data-seed="11" data-h="70" data-amp="1.05" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+            </div>
+            <span class="fo">2</span>
+          </section>
+        </div>
+
+        <!-- leaf 2: spoken intro / verse one -->
+        <div class="leaf rest" style="--i:1">
+          <section class="page front dark spot" data-title="Spoken" aria-label="Page 3, Spoken">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Spoken</h2></header>
+              <div class="say s">
+                <p>Good morning, Great&nbsp;Day&nbsp;Improvements.</p>
+                <p>They told me we were having an E-T-I townhall.</p>
+                <p>I said, “Wonderful. Did somebody fix the Wi-Fi?”</p>
+                <p>They said, “Nope, but we made a PowerPoint about it.”</p>
+              </div>
+            </div>
+            <span class="fo">3</span>
+          </section>
+          <section class="page back paper" data-title="Verse One" aria-label="Page 4, Verse One">
+            <div class="in">
+              <header class="hd"><h2 class="t">Verse One</h2><p class="d">Soft, rhythmic vocal</p></header>
+              <div class="reds" id="reds" aria-hidden="true"></div>
+              <div class="ly">
+                <p><span class="l"><b class="nm">Jordan</b>’s got a spreadsheet,</span><span class="l">With a hundred shades of red.</span><span class="l">He’s asking for a status,</span><span class="l">And the project lead plays dead.</span></p>
+                <p><span class="l"><b class="nm">Zach Halbert</b>’s got a deadline,</span><span class="l"><b class="nm">Kristie</b>’s got a plan.</span><span class="l"><b class="nm">Tristan</b>’s building Folio,</span><span class="l">As fast as anyone can.</span></p>
+                <p><span class="l"><b class="nm">John Kosh</b> built another tool</span><span class="l">To track the tools we made.</span><span class="l"><b class="nm">Pam</b>’s got every dollar</span><span class="l">In the right line on the page.</span></p>
+              </div>
+            </div>
+            <span class="fo">4</span>
+          </section>
+        </div>
+
+        <!-- leaf 3: chorus / whisper -->
+        <div class="leaf rest" style="--i:2">
+          <section class="page front rose" data-title="Chorus" aria-label="Page 5, Chorus">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Chorus</h2><p class="d">Sweeping melody, gentle sax fills</p></header>
+              <div class="ly c">
+                <p class="hook"><span class="a">It’s another</span><span class="b"><span class="ruby">Great Day</span></span><span class="c">in E-T-I!</span></p>
+                <p><span class="l">We fixed it Tuesday, then it went offline.</span><span class="l">But when the day goes wrong</span><span class="l">And the road gets twice as long,</span><span class="l">I’d still choose this team every time.</span></p>
+                <p><span class="l">We got tickets, calls, and meetings,</span><span class="l">And a roadmap ten miles wide.</span><span class="l">It’s another <span class="gd">Great Day</span> in E-T-I,</span><span class="l">And I’m glad you’re along for the ride.</span></p>
+              </div>
+            </div>
+            <span class="fo">5</span>
+          </section>
+          <section class="page back dark hush" data-title="Whispered" aria-label="Page 6, Whispered">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Whispered</h2><p class="d">Slowly, one syllable per beat</p></header>
+              <div class="apiw">
+                <div class="api" role="img" aria-label="A... P... I...">
+                  <span class="syl" style="--k:0"><b>A</b><em>ayy</em></span><span class="dots" style="--k:0"><i></i><i></i><i></i></span>
+                  <span class="syl" style="--k:1"><b>P</b><em>pee</em></span><span class="dots" style="--k:1"><i></i><i></i><i></i></span>
+                  <span class="syl" style="--k:2"><b>I</b><em>eye</em></span><span class="dots" style="--k:2"><i></i><i></i><i></i></span>
+                </div>
+              </div>
+            </div>
+            <span class="fo">6</span>
+          </section>
+        </div>
+
+        <!-- leaf 4: verse two / spoken -->
+        <div class="leaf rest" style="--i:3">
+          <section class="page front paper" data-title="Verse Two" aria-label="Page 7, Verse Two">
+            <div class="in">
+              <header class="hd"><h2 class="t">Verse Two</h2><p class="d">Soft groove</p></header>
+              <div class="ly">
+                <p><span class="l"><b class="nm">Ben Liu</b>’s on twelve projects,</span><span class="l">They all need him by noon.</span><span class="l"><b class="nm">Sean</b>’s got integrations,</span><span class="l">And he’ll need a bigger room.</span></p>
+                <p><span class="l"><b class="nm">Damian</b>’s in the data,</span><span class="l"><b class="nm">Pedro</b>’s chasing leads.</span><span class="l"><b class="nm">Bryan</b>’s on Lighthouse,</span><span class="l">Finding answers that we need.</span></p>
+                <p><span class="l"><b class="nm">Bernie</b>’s got the lakehouse,</span><span class="l"><b class="nm">Suhas</b> has the phones.</span><span class="l">Five9’s got everybody</span><span class="l">Talking in different tones.</span></p>
+              </div>
+            </div>
+            <span class="fo">7</span>
+          </section>
+          <section class="page back dark spot" data-title="Spoken" aria-label="Page 8, Spoken">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Spoken</h2><p class="d">Music drops</p></header>
+              <div class="say">
+                <p>Somebody asked if the systems are integrated.</p>
+                <p>Well… they’re certainly acquainted.</p>
+              </div>
+            </div>
+            <span class="fo">8</span>
+          </section>
+        </div>
+
+        <!-- leaf 5: chorus / instrumental -->
+        <div class="leaf rest" style="--i:4">
+          <section class="page front rose" data-title="Chorus" aria-label="Page 9, Chorus">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Chorus</h2><p class="d">Layered studio harmonies</p></header>
+              <div class="ly c">
+                <p class="hook"><span class="a">It’s another</span><span class="b e2x"><span class="ruby">Great Day</span><span class="e e1" aria-hidden="true">Great Day</span><span class="e e2" aria-hidden="true">Great Day</span></span><span class="c">in E-T-I!</span></p>
+                <p><span class="l">We fixed it Tuesday, then it went offline.</span><span class="l">But when the day goes wrong</span><span class="l">And the road gets twice as long,</span><span class="l">I’d still choose this team every time.</span></p>
+                <p><span class="l">We got Salesforce, Folio, Five9,</span><span class="l">And a dashboard ten feet wide.</span><span class="l">It’s another <span class="gd">Great Day</span> in E-T-I,</span><span class="l">And I’m glad you’re along for the ride.</span></p>
+              </div>
+            </div>
+            <span class="fo">9</span>
+          </section>
+          <section class="page back dark" data-title="Instrumental" aria-label="Page 10, Instrumental">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Instrumental</h2><p class="d">Tenor sax</p></header>
+              <div class="art"><svg class="rib" data-seed="29" data-h="70" data-amp="1.25" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+            </div>
+            <span class="fo">10</span>
+          </section>
+        </div>
+
+        <!-- leaf 6: verse three / verse four -->
+        <div class="leaf rest" style="--i:5">
+          <section class="page front paper" data-title="Verse Three" aria-label="Page 11, Verse Three">
+            <div class="in">
+              <header class="hd"><h2 class="t">Verse Three</h2><p class="d">Low, dry delivery</p></header>
+              <div class="ly">
+                <p><span class="l"><b class="nm">Jim Hobold</b>’s moving tenants,</span><span class="l"><b class="nm">Bob Nash</b> is moving gear.</span><span class="l"><b class="nm">Justin</b>’s on the network,</span><span class="l">Saying, “Everything’s just fine here!”</span></p>
+                <p><span class="l"><b class="nm">Kevin</b>’s watching security,</span><span class="l"><b class="nm">Jason</b>’s locking doors.</span><span class="l"><b class="nm">Jesus</b> has the hardware</span><span class="l">Spread across a hundred floors.</span></p>
+                <p><span class="l"><b class="nm">Matt</b>’s on the intranet,</span><span class="l"><b class="nm">Dwayne</b>’s watching threats.</span><span class="l">And somewhere in a conference room,</span><span class="l">We’re talking about what’s next.</span></p>
+              </div>
+            </div>
+            <span class="fo">11</span>
+          </section>
+          <section class="page back paper" data-title="Verse Four" aria-label="Page 12, Verse Four">
+            <div class="in">
+              <header class="hd"><h2 class="t">Verse Four</h2><p class="d">Intimate lead vocal</p></header>
+              <div class="ly">
+                <p><span class="l"><b class="nm">Brian Perry</b>’s on the ERP,</span><span class="l">And sixteen things besides.</span><span class="l"><b class="nm">Gwenne</b>’s down at Walton Hills,</span><span class="l">Keeping everything alive.</span></p>
+                <p><span class="l"><b class="nm">Adam</b>’s got inventory,</span><span class="l"><b class="nm">David</b>’s sunsetting Magic.</span><span class="l"><b class="nm">Zoltan</b>’s on the program,</span><span class="l">And the backlog’s getting tragic.</span></p>
+                <p><span class="l"><b class="nm">Mel</b> is working Salesforce,</span><span class="l"><b class="nm">Christina</b>’s in the mix.</span><span class="l"><b class="nm">Sean</b>’s got an A-P-I</span><span class="l">That just needs one more fix.</span></p>
+              </div>
+            </div>
+            <span class="fo">12</span>
+          </section>
+        </div>
+
+        <!-- leaf 7: whisper / spoken -->
+        <div class="leaf rest" style="--i:6">
+          <section class="page front dark hush" data-title="Whispered" aria-label="Page 13, Whispered">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Whispered</h2><p class="d">Slowly, one syllable per beat</p></header>
+              <div class="apiw">
+                <div class="api" role="img" aria-label="A... P... I...">
+                  <span class="syl" style="--k:0"><b>A</b><em>ayy</em></span><span class="dots" style="--k:0"><i></i><i></i><i></i></span>
+                  <span class="syl" style="--k:1"><b>P</b><em>pee</em></span><span class="dots" style="--k:1"><i></i><i></i><i></i></span>
+                  <span class="syl" style="--k:2"><b>I</b><em>eye</em></span><span class="dots" style="--k:2"><i></i><i></i><i></i></span>
+                </div>
+              </div>
+            </div>
+            <span class="fo">13</span>
+          </section>
+          <section class="page back dark spot" data-title="Spoken" aria-label="Page 14, Spoken">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Spoken</h2><p class="d">Music drops</p></header>
+              <div class="say">
+                <p>Now, I’m not saying it’s broken…</p>
+                <p>I’m just saying…</p>
+                <p>Have you tried turning the whole company off and back on?</p>
+              </div>
+            </div>
+            <span class="fo">14</span>
+          </section>
+        </div>
+
+        <!-- leaf 8: chorus / bridge -->
+        <div class="leaf rest" style="--i:7">
+          <section class="page front rose" data-title="Chorus" aria-label="Page 15, Chorus">
+            <div class="strings" aria-hidden="true"></div>
+            <div class="in">
+              <header class="hd c"><h2 class="t">Chorus</h2><p class="d">Strings rise</p></header>
+              <div class="ly c">
+                <p class="hook"><span class="a">It’s another</span><span class="b"><span class="ruby">Great Day</span></span><span class="c">in E-T-I!</span></p>
+                <p><span class="l">We fixed it Tuesday, then it went offline.</span><span class="l">But when the day goes wrong</span><span class="l">And the road gets twice as long,</span><span class="l">I’d still choose this team every time.</span></p>
+              </div>
+            </div>
+            <span class="fo">15</span>
+          </section>
+          <section class="page back paper" data-title="Bridge" aria-label="Page 16, Bridge">
+            <div class="in">
+              <header class="hd"><h2 class="t">Bridge</h2><p class="d">Soft piano and sax</p></header>
+              <div class="ly">
+                <p><span class="l"><b class="nm">Maryanne</b>’s got the Champion team,</span><span class="l"><b class="nm">Jay</b>’s working Costco too.</span><span class="l"><b class="nm">Katelyn</b>’s got the call center</span><span class="l">And a hundred things to do.</span></p>
+                <p><span class="l"><b class="nm">Soo-Jin</b>’s a frequent flyer,</span><span class="l"><b class="nm">Liz</b> has projects by the stack.</span><span class="l"><b class="nm">Auzair</b>’s deep in Folio,</span><span class="l">Wondering when he’ll get his weekends back.</span></p>
+                <p><span class="l"><b class="nm">Erin</b> took the service desk</span><span class="l">From cables piled high</span><span class="l">To looking like a Best Buy,</span><span class="l">With a Geek Squad standing by.</span></p>
+              </div>
+            </div>
+            <span class="fo">16</span>
+          </section>
+        </div>
+
+        <!-- leaf 9: spoken / sax solo and whisper -->
+        <div class="leaf rest" style="--i:8">
+          <section class="page front dark spot" data-title="Spoken" aria-label="Page 17, Spoken">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Spoken</h2><p class="d">Silence</p></header>
+              <div class="say">
+                <p>And the best part?</p>
+                <p>Next year…</p>
+                <p>We’re gonna replace everything.</p>
+              </div>
+            </div>
+            <span class="fo">17</span>
+          </section>
+          <section class="page back dark hush" data-title="Instrumental" data-turn="early" aria-label="Page 18, Instrumental and whisper">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Instrumental</h2><p class="d">Tenor sax solo</p></header>
+              <div class="art"><svg class="rib fade" data-seed="53" data-h="46" data-amp=".9" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+              <header class="hd c sub"><h2 class="t">Whispered</h2><p class="d">Slowly as the sax fades, one syllable per beat</p></header>
+              <div class="apiw fix">
+                <div class="api sm" role="img" aria-label="A... P... I...">
+                  <span class="syl" style="--k:0"><b>A</b><em>ayy</em></span><span class="dots" style="--k:0"><i></i><i></i><i></i></span>
+                  <span class="syl" style="--k:1"><b>P</b><em>pee</em></span><span class="dots" style="--k:1"><i></i><i></i><i></i></span>
+                  <span class="syl" style="--k:2"><b>I</b><em>eye</em></span><span class="dots" style="--k:2"><i></i><i></i><i></i></span>
+                </div>
+              </div>
+            </div>
+            <span class="fo">18</span>
+          </section>
+        </div>
+
+        <!-- leaf 10: verse five / final chorus -->
+        <div class="leaf rest" style="--i:9">
+          <section class="page front paper" data-title="Verse Five" aria-label="Page 19, Verse Five">
+            <div class="in">
+              <header class="hd"><h2 class="t">Verse Five</h2><p class="d">Build to finale</p></header>
+              <div class="ly">
+                <p><span class="l">We got service desk optimization,</span><span class="l">And a brand-new Talent Hub.</span><span class="l">A system to replace the system,</span><span class="l">Then another one for the sub.</span></p>
+                <p><span class="l">We got Lighthouse, Folio, Lead Hub,</span><span class="l">And a whole lot more to do.</span><span class="l">And when we finally close a project,</span><span class="l">Somebody starts Phase Two.</span></p>
+              </div>
+            </div>
+            <span class="fo">19</span>
+          </section>
+          <section class="page back dark gala framed" data-title="Final Chorus" aria-label="Page 20, Final Chorus">
+            <div class="strings" aria-hidden="true"></div>
+            <div class="in">
+              <header class="hd c"><h2 class="t">Final Chorus</h2><p class="d">Full strings and stacked harmonies</p></header>
+              <div class="ly c">
+                <p class="hook"><span class="a">It’s another</span><span class="b e3x"><span class="foil">Great Day</span><span class="e e1" aria-hidden="true">Great Day</span><span class="e e2" aria-hidden="true">Great Day</span><span class="e e3" aria-hidden="true">Great Day</span></span><span class="c">in E-T-I!</span></p>
+                <p><span class="l">I’d still choose this team every time.</span><span class="l">The business thinks it’s magic,</span><span class="l">But I know who’s behind it.</span><span class="l">You’re the reason those <span class="grn">green lights</span> shine.</span></p>
+                <p><span class="l">Another ticket, another meeting,</span><span class="l">Another project overdue.</span><span class="l">It’s another <span class="gd">Great Day</span> in E-T-I,</span><span class="l">And we couldn’t do it without you.</span></p>
+              </div>
+            </div>
+            <span class="fo">20</span>
+          </section>
+        </div>
+
+        <!-- leaf 11: outro / the last line -->
+        <div class="leaf rest" style="--i:10">
+          <section class="page front dark spot" data-title="Outro" aria-label="Page 21, Outro">
+            <div class="in">
+              <header class="hd c"><h2 class="t">Outro</h2><p class="d">Spoken over fading piano</p></header>
+              <div class="rag">
+                <p style="--k:0"><span class="lamp go" style="--k:0" aria-hidden="true"></span>If your project is green, congratulations.</p>
+                <p style="--k:1"><span class="lamp hold" style="--k:1" aria-hidden="true"></span>If it’s yellow, we believe in you.</p>
+                <p style="--k:2"><span class="lamp stop" style="--k:2" aria-hidden="true"></span>And if it’s red…</p>
+              </div>
+            </div>
+            <span class="fo">21</span>
+          </section>
+          <section class="page back dark hush" data-title="Outro" data-turn="late" aria-label="Page 22, Outro">
+            <div class="in fin">
+              <p class="cue">Silence</p>
+              <p class="punch"><b class="nm">Jordan</b> would like to schedule a meeting.</p>
+              <div class="last">
+                <svg class="note" viewBox="0 0 68 26" aria-hidden="true">
+                  <g fill="none" stroke="#e3ba6a" stroke-width=".3" opacity=".5"><path d="M4 9H64M4 12H64M4 15H64M4 18H64M4 21H64"/></g>
+                  <ellipse cx="34" cy="15" rx="2.4" ry="1.55" fill="none" stroke="#e3ba6a" stroke-width="1.1" transform="rotate(-18 34 15)"/>
+                  <path d="M29.5 5.6A4.5 4.5 0 0 1 38.5 5.6" fill="none" stroke="#e3ba6a" stroke-width=".5" stroke-linecap="round"/>
+                  <circle cx="34" cy="4.7" r=".6" fill="#e3ba6a"/>
+                </svg>
+                <p class="cue">One last sax note</p>
+              </div>
+            </div>
+            <span class="fo">22</span>
+          </section>
+        </div>
+
+        <!-- leaf 12: personnel / back cover -->
+        <div class="leaf rest" style="--i:11">
+          <section class="page front paper" data-title="Personnel" data-turn="never" aria-label="Page 23, Personnel">
+            <div class="in">
+              <header class="hd tight"><h2 class="t">Personnel</h2><p class="d">In order of appearance</p></header>
+              <div class="creds">
+                <button class="cred" type="button" id="cred-v1" data-goto="3"><span class="ch"><span>Verse One</span><span class="ld"></span><span>Page 4</span></span><span class="cb"><span class="pr"><b>Jordan</b> <i>spreadsheet</i><span class="sp">·</span></span> <span class="pr"><b>Zach Halbert</b> <i>deadline</i><span class="sp">·</span></span> <span class="pr"><b>Kristie</b> <i>plan</i><span class="sp">·</span></span> <span class="pr"><b>Tristan</b> <i>Folio</i><span class="sp">·</span></span> <span class="pr"><b>John Kosh</b> <i>tools</i><span class="sp">·</span></span> <span class="pr"><b>Pam</b> <i>every dollar</i></span></span></button>
+                <button class="cred" type="button" id="cred-v2" data-goto="6"><span class="ch"><span>Verse Two</span><span class="ld"></span><span>Page 7</span></span><span class="cb"><span class="pr"><b>Ben Liu</b> <i>twelve projects</i><span class="sp">·</span></span> <span class="pr"><b>Sean</b> <i>integrations</i><span class="sp">·</span></span> <span class="pr"><b>Damian</b> <i>data</i><span class="sp">·</span></span> <span class="pr"><b>Pedro</b> <i>leads</i><span class="sp">·</span></span> <span class="pr"><b>Bryan</b> <i>Lighthouse</i><span class="sp">·</span></span> <span class="pr"><b>Bernie</b> <i>lakehouse</i><span class="sp">·</span></span> <span class="pr"><b>Suhas</b> <i>phones</i></span></span></button>
+                <button class="cred" type="button" id="cred-v3" data-goto="10"><span class="ch"><span>Verse Three</span><span class="ld"></span><span>Page 11</span></span><span class="cb"><span class="pr"><b>Jim Hobold</b> <i>tenants</i><span class="sp">·</span></span> <span class="pr"><b>Bob Nash</b> <i>gear</i><span class="sp">·</span></span> <span class="pr"><b>Justin</b> <i>network</i><span class="sp">·</span></span> <span class="pr"><b>Kevin</b> <i>security</i><span class="sp">·</span></span> <span class="pr"><b>Jason</b> <i>doors</i><span class="sp">·</span></span> <span class="pr"><b>Jesus</b> <i>hardware</i><span class="sp">·</span></span> <span class="pr"><b>Matt</b> <i>intranet</i><span class="sp">·</span></span> <span class="pr"><b>Dwayne</b> <i>threats</i></span></span></button>
+                <button class="cred" type="button" id="cred-v4" data-goto="11"><span class="ch"><span>Verse Four</span><span class="ld"></span><span>Page 12</span></span><span class="cb"><span class="pr"><b>Brian Perry</b> <i>ERP</i><span class="sp">·</span></span> <span class="pr"><b>Gwenne</b> <i>Walton Hills</i><span class="sp">·</span></span> <span class="pr"><b>Adam</b> <i>inventory</i><span class="sp">·</span></span> <span class="pr"><b>David</b> <i>Magic</i><span class="sp">·</span></span> <span class="pr"><b>Zoltan</b> <i>the program</i><span class="sp">·</span></span> <span class="pr"><b>Mel</b> <i>Salesforce</i><span class="sp">·</span></span> <span class="pr"><b>Christina</b> <i>the mix</i><span class="sp">·</span></span> <span class="pr"><b>Sean</b> <i>an A-P-I</i></span></span></button>
+                <button class="cred" type="button" id="cred-br" data-goto="15"><span class="ch"><span>Bridge</span><span class="ld"></span><span>Page 16</span></span><span class="cb"><span class="pr"><b>Maryanne</b> <i>the Champion team</i><span class="sp">·</span></span> <span class="pr"><b>Jay</b> <i>Costco</i><span class="sp">·</span></span> <span class="pr"><b>Katelyn</b> <i>the call center</i><span class="sp">·</span></span> <span class="pr"><b>Soo-Jin</b> <i>frequent flyer</i><span class="sp">·</span></span> <span class="pr"><b>Liz</b> <i>projects by the stack</i><span class="sp">·</span></span> <span class="pr"><b>Auzair</b> <i>Folio</i><span class="sp">·</span></span> <span class="pr"><b>Erin</b> <i>the service desk</i></span></span></button>
+              </div>
+            </div>
+            <span class="fo">23</span>
+          </section>
+          <section class="page back cover framed" data-title="Back cover" aria-label="Back cover">
+            <div class="in cv">
+              <p class="cv-top long">Another Great Day in E-T-I</p>
+              <blockquote class="bk-q foil">I’d still choose this team every time.</blockquote>
+              <div class="cv-foot">
+                <span class="orn" aria-hidden="true"></span>
+                <p class="bk-with">With tenor sax, soft electric piano, strings and stacked harmonies</p>
+                <p class="cv-org">Great Day Improvements<br>Enterprise Technology &amp; Intelligence<br>2026</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="zone zp" id="zp"></div>
+        <div class="zone zn" id="zn"></div>
+      </div>
+    </div>
+  </main>
+
+  <nav class="bar" id="bar" aria-label="Song and pages" data-at="cover">
+    <div class="song" id="song" hidden>
+      <button class="nb play" type="button" id="play" aria-label="Play the song" aria-pressed="false"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5v13M15.5 5.5v13"/></svg></button>
+      <div class="mid">
+        <div class="lab"><span id="songLab">The song</span><span id="clock">0:00 / 0:00</span></div>
+        <input class="scrub" id="seek" type="range" min="0" max="100" step="1" value="0" aria-label="Song position">
+      </div>
+      <button class="pill" type="button" id="follow" hidden>Follow</button>
+    </div>
+    <div class="pager">
+    <button class="nb" type="button" id="prev" aria-label="Previous page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="mid">
+      <div class="lab"><span id="lab" aria-live="polite">Cover</span><span id="cnt">Open to begin</span></div>
+      <input class="scrub" id="scrub" type="range" min="0" max="12" step="1" value="0" aria-label="Turn to page">
+    </div>
+    <button class="nb" type="button" id="next" aria-label="Next page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <button class="nb" type="button" id="fs" aria-label="Full screen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/></svg></button>
+    </div>
+  </nav>
+</div>
+
+<script>
+(() => {
+  'use strict';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const stage = $('#stage'), wrap = $('#wrap'), book = $('#book'), bar = $('#bar');
+  const leaves = $$('.leaf', book), pages = $$('.page', book);
+  const N = leaves.length, P = pages.length;
+  const lab = $('#lab'), cnt = $('#cnt'), scrub = $('#scrub');
+  const prevB = $('#prev'), nextB = $('#next'), fsB = $('#fs');
+  const au = $('#au'), songBox = $('#song'), playB = $('#play'), seek = $('#seek'), clock = $('#clock');
+  const followB = $('#follow'), disc = $('#disc'), discPlay = $('#discPlay'), discText = $('#discText');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const RATIO = 5 / 7, MAX_PW = 620;
+  let mode = 'single', p = 0, swipedAt = 0;
+
+  book.style.setProperty('--n', N);
+
+  /* small seeded generator so the drawn details are the same on every visit */
+  function rng(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      let t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  /* verse one: one hundred shades of red, counted */
+  (function reds() {
+    const el = $('#reds'); if (!el) return;
+    const r = rng(151); let h = '';
+    for (let i = 0; i < 100; i++) {
+      const row = Math.floor(i / 10), col = i % 10;
+      const t = (row * 1.15 + col * 0.55) / 15.3;
+      const hue = Math.round(344 + r() * 26) % 360;
+      const sat = Math.round(58 + r() * 30);
+      const lig = Math.round(80 - t * 52 + (r() - 0.5) * 9);
+      h += '<i' + (i === 36 ? ' class="sel"' : '') + ' style="background:hsl(' + hue + ' ' + sat + '% ' + lig + '%)"></i>';
+    }
+    el.innerHTML = h;
+  })();
+
+  /* the sax line: five staff lines that drift like a ribbon */
+  $$('.rib', book).forEach(svg => {
+    const H = +svg.dataset.h || 60, amp = +svg.dataset.amp || 1;
+    const r = rng((+svg.dataset.seed || 1) * 7919);
+    const f1 = 0.55 + r() * 0.35, f2 = 1.3 + r() * 0.7, f3 = 2.6 + r();
+    const p1 = r() * 6.283, p2 = r() * 6.283, p3 = r() * 6.283;
+    svg.setAttribute('viewBox', '0 0 100 ' + H);
+    let out = '';
+    for (let k = 0; k < 5; k++) {
+      let d = '';
+      for (let i = 0; i <= 140; i++) {
+        const t = i / 140, x = -4 + t * 108, w = 6.283 * t;
+        const gap = 1.25 + 0.95 * Math.sin(w * f2 * 0.5 + p3);
+        const y = H / 2 + amp * (9 * Math.sin(w * f1 + p1) + 4.2 * Math.sin(w * f2 + p2) + 1.4 * Math.sin(w * f3 + p3)) + (k - 2) * gap;
+        d += (i ? 'L' : 'M') + x.toFixed(2) + ' ' + y.toFixed(2);
+      }
+      out += '<path d="' + d + '" pathLength="1" style="--k:' + k + '"/>';
+    }
+    svg.innerHTML = out;
+  });
+
+  /* every sung, spoken or whispered line in song order; each gets an inline wrapper the highlight can hug */
+  const cueEls = $$('.hook, .ly .l, .say p, .rag p, .punch, .api', book);
+  cueEls.forEach(el => {
+    if (el.matches('.hook, .api')) return;
+    const lt = document.createElement('span');
+    lt.className = 'lt';
+    if (el.matches('.rag p')) {
+      const txt = Array.from(el.childNodes).filter(nd => nd.nodeType === 3 && nd.nodeValue.trim())[0];
+      if (!txt) return;
+      const box = document.createElement('span');
+      txt.replaceWith(box);
+      lt.appendChild(txt);
+      box.appendChild(lt);
+    } else {
+      while (el.firstChild) lt.appendChild(el.firstChild);
+      el.appendChild(lt);
+    }
+  });
+
+  /* this typeface draws its hyphen as a hairline: keep hyphenated words together and give the hyphen some weight */
+  $$('.ly, .say, .rag, .cred .cb', book).forEach(root => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) if (walker.currentNode.nodeValue.indexOf('-') !== -1) nodes.push(walker.currentNode);
+    nodes.forEach(n => {
+      const frag = document.createDocumentFragment();
+      n.nodeValue.split(/(\S*-\S*)/).forEach((t, i) => {
+        if (!t) return;
+        if (i % 2 === 0) { frag.appendChild(document.createTextNode(t)); return; }
+        const word = document.createElement('span');
+        word.className = 'nw';
+        t.split('-').forEach((seg, k) => {
+          if (k) { const h = document.createElement('span'); h.className = 'hy'; h.textContent = '-'; word.appendChild(h); }
+          if (seg) word.appendChild(document.createTextNode(seg));
+        });
+        frag.appendChild(word);
+      });
+      n.replaceWith(frag);
+    });
+  });
+
+  const spreadOf = i => Math.ceil(i / 2);
+  const leftOf = s => Math.max(0, 2 * s - 1);
+
+  function visiblePages() {
+    if (mode === 'single') return [p];
+    const s = spreadOf(p);
+    return [2 * s - 1, 2 * s].filter(j => j >= 0 && j < P);
+  }
+
+  function flipLeaf(L, want, delay) {
+    L._tok = (L._tok || 0) + 1;
+    const tok = L._tok;
+    if (delay < 0) { L.classList.add('rest'); L.classList.toggle('flipped', want); return; }
+    L.style.setProperty('--delay', delay + 'ms');
+    if (L.classList.contains('rest')) {
+      L.classList.add('prep');
+      L.classList.remove('rest');
+      void L.offsetWidth;
+      L.classList.remove('prep');
+    }
+    L.classList.toggle('flipped', want);
+    const dur = parseFloat(book.style.getPropertyValue('--dur')) || 880;
+    setTimeout(() => { if (L._tok === tok) L.classList.add('rest'); }, delay + dur + 140);
+  }
+
+  function render(instant) {
+    const s = spreadOf(p);
+    const anim = !instant && !reduce.matches;
+    if (mode === 'spread') {
+      const ch = leaves.map((L, i) => ({ L, want: i < s })).filter(o => o.L.classList.contains('flipped') !== o.want);
+      if (ch.length && !ch[0].want) ch.reverse();
+      const step = ch.length > 1 ? Math.max(30, Math.min(90, 420 / ch.length)) : 0;
+      book.style.setProperty('--dur', (ch.length > 2 ? 620 : 880) + 'ms');
+      ch.forEach((o, k) => flipLeaf(o.L, o.want, anim ? k * step : -1));
+      pages.forEach((pg, j) => pg.classList.toggle('turned', j < p));
+    } else {
+      leaves.forEach((L, i) => { L._tok = (L._tok || 0) + 1; L.classList.add('rest'); L.classList.toggle('flipped', i < s); });
+      const ch = pages.map((pg, j) => ({ pg, want: j < p })).filter(o => o.pg.classList.contains('turned') !== o.want);
+      if (ch.length && !ch[0].want) ch.reverse();
+      const step = ch.length > 1 ? Math.max(14, Math.min(60, 300 / ch.length)) : 0;
+      ch.forEach((o, k) => { o.pg.style.setProperty('--delay', (anim ? k * step : 0) + 'ms'); o.pg.classList.toggle('turned', o.want); });
+    }
+    book.dataset.at = s === 0 ? 'cover' : (s === N ? 'back' : 'open');
+    updateUI();
+  }
+
+  function updateUI() {
+    const vis = visiblePages(), s = spreadOf(p);
+    pages.forEach((pg, j) => {
+      const on = vis.indexOf(j) !== -1;
+      pg.classList.toggle('live', on);
+      pg.inert = !on;
+      pg.setAttribute('aria-hidden', on ? 'false' : 'true');
+    });
+    const names = Array.from(new Set(vis.map(j => pages[j].dataset.title)));
+    lab.textContent = names.join(' · ');
+    if (p === 0) cnt.textContent = 'Open to begin';
+    else if (vis.length > 1) cnt.textContent = 'Pages ' + (vis[0] + 1) + '-' + (vis[1] + 1) + ' of ' + P;
+    else cnt.textContent = (mode === 'spread' ? 'Page ' : '') + (vis[0] + 1) + ' of ' + P;
+    const max = mode === 'spread' ? N : P - 1, val = mode === 'spread' ? s : p;
+    scrub.max = max; scrub.value = val;
+    scrub.style.setProperty('--fill', (100 * val / max) + '%');
+    scrub.setAttribute('aria-valuetext', names.join(', '));
+    prevB.disabled = p === 0;
+    nextB.disabled = mode === 'spread' ? s === N : p === P - 1;
+    bar.dataset.at = book.dataset.at;
+    disc.inert = !(mode === 'spread' && book.dataset.at === 'cover');
+  }
+
+  function go(t) {
+    t = Math.max(0, Math.min(P - 1, Math.round(t)));
+    if (mode === 'spread') t = leftOf(spreadOf(t));
+    if (t === p) return;
+    p = t;
+    render(false);
+  }
+  function next() {
+    if (mode === 'spread') { const s = spreadOf(p); if (s < N) go(leftOf(s + 1)); }
+    else go(p + 1);
+  }
+  function prev() {
+    if (mode === 'spread') { const s = spreadOf(p); if (s > 0) go(leftOf(s - 1)); }
+    else go(p - 1);
+  }
+
+  function layout() {
+    const W = stage.clientWidth, H = stage.clientHeight;
+    if (W < 40 || H < 40) return;
+    const want = (W / H >= 1.12 && W >= 620) ? 'spread' : 'single';
+    let ratio = RATIO, pw;
+    if (want === 'spread') pw = Math.min(W / 2, H * 0.965 * RATIO, MAX_PW);
+    else { ratio = Math.max(0.6, Math.min(RATIO, W / H)); pw = Math.min(W, H * ratio, MAX_PW); }
+    pw = Math.floor(pw);
+    wrap.style.width = (want === 'spread' ? pw * 2 : pw) + 'px';
+    wrap.style.height = Math.floor(pw / ratio) + 'px';
+    book.style.setProperty('--u', (pw / 100) + 'px');
+    /* a taller single page has room for larger type */
+    book.style.setProperty('--ts', Math.min(1.1, Math.max(1, (1 / ratio) / 1.4)).toFixed(3));
+    if (want !== mode) {
+      mode = want;
+      book.classList.add('no-anim');
+      book.dataset.mode = mode;
+      if (mode === 'spread') p = leftOf(spreadOf(p));
+      render(true);
+      void book.offsetWidth;
+      book.classList.remove('no-anim');
+    }
+  }
+
+  /* a leaf that has finished turning settles flat */
+  book.addEventListener('transitionend', e => {
+    const L = e.target;
+    if (e.propertyName === 'transform' && L.classList && L.classList.contains('leaf')) L.classList.add('rest');
+  });
+
+  nextB.addEventListener('click', () => { manual(); next(); });
+  prevB.addEventListener('click', () => { manual(); prev(); });
+  $('#zn').addEventListener('click', () => { if (performance.now() - swipedAt > 350) { manual(); next(); } });
+  $('#zp').addEventListener('click', () => { if (performance.now() - swipedAt > 350) { manual(); prev(); } });
+  scrub.addEventListener('input', () => { const v = +scrub.value; manual(); go(mode === 'spread' ? leftOf(v) : v); });
+  book.addEventListener('click', e => { const b = e.target.closest('[data-goto]'); if (b) { manual(); go(+b.dataset.goto); } });
+
+  document.addEventListener('keydown', e => {
+    if (e.altKey || e.ctrlKey || e.metaKey) return;
+    const t = e.target;
+    if (t && (t.id === 'scrub' || t.id === 'seek')) return;
+    switch (e.key) {
+      case 'ArrowRight': case 'PageDown': manual(); next(); break;
+      case 'ArrowLeft': case 'PageUp': manual(); prev(); break;
+      case ' ': if (t && t.tagName === 'BUTTON') return; if (songOn) toggleSong(); else next(); break;
+      case 'Home': manual(); go(0); break;
+      case 'End': manual(); go(P - 1); break;
+      default: return;
+    }
+    e.preventDefault();
+  });
+
+  /* swipe to turn on touch screens */
+  let sx = 0, sy = 0, tracking = false;
+  stage.addEventListener('pointerdown', e => { if (e.pointerType === 'mouse') return; tracking = true; sx = e.clientX; sy = e.clientY; });
+  stage.addEventListener('pointerup', e => {
+    if (!tracking) return; tracking = false;
+    const dx = e.clientX - sx, dy = e.clientY - sy;
+    if (Math.abs(dx) > 36 && Math.abs(dx) > Math.abs(dy) * 1.3) { swipedAt = performance.now(); manual(); if (dx < 0) next(); else prev(); }
+  });
+  stage.addEventListener('pointercancel', () => { tracking = false; });
+
+  /* the foil catches the light as the pointer moves */
+  let raf = 0;
+  stage.addEventListener('pointermove', e => {
+    if (e.pointerType !== 'mouse' || raf) return;
+    const x = e.clientX;
+    raf = requestAnimationFrame(() => {
+      raf = 0;
+      const r = stage.getBoundingClientRect();
+      const f = Math.max(0, Math.min(1, (x - r.left) / r.width));
+      book.style.setProperty('--foil', (18 + f * 64).toFixed(1));
+    });
+  });
+
+  if (document.fullscreenEnabled) {
+    fsB.hidden = false;
+    fsB.addEventListener('click', () => {
+      try {
+        if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+        else document.documentElement.requestFullscreen().catch(() => {});
+      } catch (err) { /* not available here */ }
+    });
+  }
+
+  /* ---------- the song ---------- */
+  /* start and end of every line in seconds, measured from this recording (tools/finalize.mjs writes these two rows) */
+  const CUE_T = [2.54,6.24,9.86,13.58,32.4,34.5,39.9,42.08,46.98,49.66,54.88,57.6,62.34,65.42,69.96,71.28,77.46,81.38,85.18,86.88,88.74,92.26,94.4,96.34,99.7,107.68,111.84,113.5,115.44,116.84,118.94,120.82,122.94,123.74,126.34,128.36,129.82,131,133.86,137.48,139.8,144.02,147.54,149.66,151.62,154.8,159.2,161.94,166.3,184.22,186.98,188.28,190.14,192.3,194.06,195.8,197.44,200.2,202.04,203.14,205.18,208.54,210.8,212.46,214.2,215.74,218.12,219.52,221.02,223.7,226,227.56,228.56,232.58,235.46,238.96,240.28,243.58,248.22,251.94,253.9,255.82,259.5,262.34,263.9,265.64,267.4,269.36,270.9,272.66,275.3,276.52,278.12,280.64,284.16,286.7,287.94,299.8,303.74,308.4,311.8,316.06,319.3,323.92,327,330.34,333.94,338.6,342.64,344.52,346.48,349.36,351.88,353.56,360.26,363.64,368.64,373.44,376.58];
+  const CUE_E = [4.62,8.9,12.18,17.46,34.5,38.52,42.08,46.42,49.62,53.08,57.34,60.6,65.42,69.52,71.28,75.92,81.16,84.72,86.88,88.74,91.54,94.4,96.34,99.7,106.34,109.08,113.5,114.88,116.84,118.12,120.28,122,123.74,125.52,127.9,129.34,131,132.78,136.22,139.8,144.02,147.54,149.66,151.54,154.26,158.78,161.94,166.3,171.94,186.66,188.28,190.14,192.3,194.06,195.78,197.44,199.38,201.48,203.14,205.18,206.76,210.8,212.46,214.2,215.74,217.78,219.52,221.02,223.02,225.24,226.86,228.56,230.8,233.18,237.76,240.06,243.58,248.22,251.8,253.9,255.76,258.84,261.96,263.86,265.64,267.38,269.08,270.9,272.46,274.46,276.52,278.12,280.04,282.6,285.42,287.42,289.64,302.6,308.1,311.6,316.06,319.3,323.92,327,330.34,333.94,338.5,341.98,344.5,346.48,349.36,351.84,353.56,357.8,362.92,366.78,371.8,374.76,379.3];
+  const SONG = au.getAttribute('src');
+  const synced = CUE_T.length === cueEls.length;
+  const cuePage = cueEls.map(el => pages.indexOf(el.closest('.page')));
+  const PT = pages.map(() => Infinity);
+  let songOn = false, follow = true, autoPage = -1, cur = -2, curOn = false, seeking = false, loopId = 0, blobTried = false;
+
+  /* when each page comes up: just ahead of its first line, or as soon as the page before has finished */
+  function buildPageTimes() {
+    if (!synced) return;
+    const dur = isFinite(au.duration) ? au.duration : CUE_E[CUE_E.length - 1] + 20;
+    PT[0] = -1; PT[1] = 0;
+    for (let j = 2; j < P; j++) {
+      const first = cuePage.indexOf(j), how = pages[j].dataset.turn;
+      let prevEnd = 0;
+      cuePage.forEach((pg, k) => { if (pg < j) prevEnd = Math.max(prevEnd, CUE_E[k]); });
+      if (how === 'never') PT[j] = Infinity;
+      else if (first < 0 || how === 'early') PT[j] = prevEnd + 1.5;
+      else if (how === 'late') PT[j] = CUE_T[first] - 0.45;
+      else PT[j] = Math.max(prevEnd - 0.35, Math.min(CUE_T[first] - 0.8, Math.max(prevEnd + 1.5, CUE_T[first] - 4)));
+    }
+    PT[P - 1] = dur - 6;
+  }
+  function pageAt(t) { let pg = 0; for (let j = 1; j < P; j++) if (PT[j] <= t) pg = j; return pg; }
+  function cueAt(t) { let i = -1; for (let k = 0; k < CUE_T.length; k++) { if (CUE_T[k] <= t) i = k; else break; } return i; }
+
+  function setCue(i, on) {
+    if (i === cur && on === curOn) return;
+    const fresh = i !== cur;
+    cur = i; curOn = on;
+    cueEls.forEach((el, k) => {
+      el.classList.toggle('now', on && k === i);
+      el.classList.toggle('past', k < i || (k === i && !on));
+    });
+    /* a whisper starts its three letters over, so A lands on the cue */
+    if (fresh && on && i >= 0 && cueEls[i].classList.contains('api')) {
+      $$('.syl b, .dots', cueEls[i]).forEach(el => el.getAnimations().forEach(a => { a.currentTime = 0; }));
+    }
+  }
+  function sync(t) {
+    if (!synced) return;
+    const i = cueAt(t);
+    setCue(i, i >= 0 && t <= CUE_E[i] + 0.9);
+    if (follow) { const pg = pageAt(t); if (pg !== autoPage) { autoPage = pg; go(pg); } }
+  }
+
+  const fmt = s => { s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+  function paint() {
+    const d = isFinite(au.duration) ? au.duration : 0;
+    if (!seeking) seek.value = Math.floor(au.currentTime);
+    const t = seeking ? +seek.value : au.currentTime;
+    seek.style.setProperty('--fill', (d ? 100 * t / d : 0) + '%');
+    clock.textContent = fmt(t) + ' / ' + fmt(d);
+    seek.setAttribute('aria-valuetext', fmt(t) + ' of ' + fmt(d));
+  }
+  function loop() {
+    loopId = 0;
+    if (au.paused) return;
+    paint(); sync(au.currentTime);
+    loopId = requestAnimationFrame(loop);
+  }
+  function showFollow() { followB.hidden = follow || au.paused || !synced; }
+  function setPlaying(on) {
+    book.dataset.playing = bar.dataset.playing = on ? '1' : '0';
+    [playB, discPlay].forEach(b => {
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.setAttribute('aria-label', on ? 'Pause the song' : 'Play the song');
+    });
+    discText.textContent = on ? 'Pause' : 'Play';
+    showFollow();
+    if (on && !loopId) loop();
+  }
+  function playSong() {
+    follow = true; autoPage = -1;
+    const pr = au.play();
+    if (pr && pr.catch) pr.catch(() => {});
+  }
+  function toggleSong() { if (!songOn) return; if (au.paused) playSong(); else au.pause(); }
+  /* turning a page by hand while the song plays lets go of the song; the Follow button picks it back up */
+  function manual() { if (songOn && !au.paused && follow) { follow = false; showFollow(); } }
+
+  function songOff() { songOn = false; songBox.hidden = true; book.dataset.song = bar.dataset.song = 'off'; }
+  function loadWhole() { return fetch(SONG).then(r => { if (!r.ok) throw new Error('song missing'); return r.blob(); }).then(b => URL.createObjectURL(b)); }
+  function songFailed() {
+    if (blobTried) { songOff(); return; }
+    blobTried = true;
+    loadWhole().then(u => { au.src = u; }).catch(songOff);
+  }
+  /* if this host cannot serve part of the file, hold the whole song in memory so seeking still works */
+  function checkSeekable() {
+    if (blobTried) return;
+    let ok = false;
+    try { ok = au.seekable.length > 0 && au.seekable.end(au.seekable.length - 1) >= au.duration - 2; } catch (err) { ok = false; }
+    if (ok) return;
+    blobTried = true;
+    loadWhole().then(u => {
+      const t = au.currentTime, was = !au.paused;
+      au.addEventListener('loadedmetadata', function once() {
+        au.removeEventListener('loadedmetadata', once);
+        au.currentTime = t;
+        if (was) { const pr = au.play(); if (pr && pr.catch) pr.catch(() => {}); }
+      });
+      au.src = u;
+    }).catch(() => {});
+  }
+
+  au.addEventListener('loadedmetadata', () => {
+    songOn = true;
+    songBox.hidden = false;
+    book.dataset.song = bar.dataset.song = 'on';
+    seek.max = Math.floor(au.duration);
+    buildPageTimes(); paint(); checkSeekable();
+  });
+  au.addEventListener('play', () => setPlaying(true));
+  au.addEventListener('pause', () => setPlaying(false));
+  au.addEventListener('ended', () => { setPlaying(false); paint(); });
+  au.addEventListener('timeupdate', () => { paint(); if (!au.paused) sync(au.currentTime); });
+  au.addEventListener('seeked', () => { paint(); if (!au.paused || au.currentTime > 0) sync(au.currentTime); });
+  au.addEventListener('error', songFailed);
+  if (au.readyState >= 1) au.dispatchEvent(new Event('loadedmetadata'));
+  else if (au.error) songFailed();
+
+  playB.addEventListener('click', toggleSong);
+  disc.addEventListener('click', toggleSong);
+  followB.addEventListener('click', () => { follow = true; autoPage = -1; showFollow(); sync(au.currentTime); });
+  seek.addEventListener('input', () => { seeking = true; paint(); });
+  seek.addEventListener('change', () => {
+    au.currentTime = +seek.value;
+    seeking = false; follow = true; autoPage = -1;
+    showFollow(); paint();
+  });
+  if ('mediaSession' in navigator && window.MediaMetadata) {
+    try { navigator.mediaSession.metadata = new MediaMetadata({ title: 'Another Great Day in E-T-I', album: 'The Lyric Book' }); } catch (err) { /* optional */ }
+  }
+
+  book.classList.add('no-anim');
+  layout();
+  render(true);
+  void book.offsetWidth;
+  book.classList.remove('no-anim');
+  if ('ResizeObserver' in window) new ResizeObserver(layout).observe(stage);
+  else window.addEventListener('resize', layout);
+})();
+</script>
+</body>
+</html>
